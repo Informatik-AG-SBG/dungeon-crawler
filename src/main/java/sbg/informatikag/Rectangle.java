@@ -21,6 +21,11 @@ public class Rectangle implements CollisionObject {
         this.end = end;
     }
 
+    public Rectangle(Vector2 start, Vector2 end) {
+        this.setStart(start);
+        this.setEnd(end);
+    }
+
     @Override
     public boolean collides(Vector2 location) {
         return (((location.getX() >= this.getStart().getX()) && (location.getY() >= this.getStart().getY())) && ((location.getX() <= this.getEnd().getX()) && (location.getY() <= this.getEnd().getX())));

@@ -1,5 +1,8 @@
 package sbg.informatikag;
 
+import java.util.LinkedHashMap;
+
+import sbg.informatikag.entities.actors.Actor;
 import sbg.informatikag.world.World;
 
 public class DungeonCrawler {
